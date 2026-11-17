@@ -1,0 +1,20 @@
+{
+  "name": "primo-technical-case",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/api",
+    "apps/web"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace apps/api & npm run dev --workspace apps/web",
+    "test": "npm run test --workspace apps/api",
+    "typecheck": "npm run typecheck --workspaces",
+    "check": "npm run typecheck && npm run test",
+    "reset": "node -e \"require('fs').rmSync('apps/api/.data',{recursive:true,force:true})\"",
+    "submit": "node scripts/submit.mjs"
+  }
+}

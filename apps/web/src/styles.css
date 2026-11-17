@@ -1,0 +1,50 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #1f2328;
+  background: #f6f7f9;
+}
+body {
+  margin: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e3e5e8;
+}
+main {
+  padding: 24px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+th,
+td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid #eceef1;
+}
+.muted {
+  color: #6b7280;
+  font-size: 0.85em;
+}
+.badge {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 0.85em;
+}
+.badge.compliant {
+  background: #dcfce7;
+  color: #166534;
+}
+.badge.non_compliant {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.error {
+  color: #991b1b;
+}
