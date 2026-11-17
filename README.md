@@ -28,7 +28,7 @@ have employees, employees have laptops, and an MDM reports on those laptops ever
 You need Node.js 22 or later and git.
 
 ```bash
-git clone <this repository> primo-technical-case
+git clone https://github.com/getprimo/primo-technical-case.git
 cd primo-technical-case
 npm install
 npm run check   # typecheck + tests, should be green
